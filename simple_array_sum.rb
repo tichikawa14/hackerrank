@@ -24,3 +24,13 @@ fptr.write result
 fptr.write "\n"
 
 fptr.close()
+
+strArr = gets.rstrip.split
+
+count = 0
+strArr.each do |str|
+  count += 1 unless str !~ (/[\A0-9A-Z]/)
+end
+
+puts count
+
